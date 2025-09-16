@@ -5,6 +5,22 @@ import os
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
+import sys
+import subprocess
+
+# 디버깅용 - plotly 설치 상태 확인
+try:
+    import plotly
+    st.success(f"Plotly version: {plotly.__version__}")
+except ImportError as e:
+    st.error(f"Plotly import error: {e}")
+    
+    # 강제 설치 시도
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    st.info("Plotly installed, please refresh the page")
+    st.stop()
+
+import plotly.express as px
 
 # pandas 호환성 수정
 if not hasattr(pd.DataFrame, 'iteritems'):
