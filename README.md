@@ -1,17 +1,12 @@
-# �???�구개발?�업 ?�자분석 ?�?�보??
-
-## ?�치 방법
-1. Python 3.8 ?�상 ?�치
+1. Python 3.8 ?挫儊 ?れ箻
 2. pip install -r requirements.txt
 3. streamlit run main.py
+- main.py: 氅旍澑 ?ろ枆 ?岇澕
+- config.py: ?れ爼 ?岇澕
+- data_generator.py: ?橅攲 ?办澊???濎劚
+- components/: UI 旎错彫?岉姼 氇搱??
 
-## ?�일 구조
-- main.py: 메인 ?�행 ?�일
-- config.py: ?�정 ?�일
-- data_generator.py: ?�플 ?�이???�성
-- components/: UI 컴포?�트 모듈??
-
-## ?�행 방법
+## ?ろ枆 氚╇矔
 ```bash
 streamlit run main.py
 ```
